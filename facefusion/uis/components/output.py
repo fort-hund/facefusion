@@ -25,10 +25,12 @@ def render() -> None:
 	)
 	OUTPUT_IMAGE = gradio.Image(
 		label = wording.get('uis.output_image_or_video'),
-		visible = False
+		visible = False,
+		elem_id = "forThundOutputImage"
 	)
 	OUTPUT_VIDEO = gradio.Video(
-		label = wording.get('uis.output_image_or_video')
+		label = wording.get('uis.output_image_or_video'),
+  	elem_id = "forThundOutputVideo"
 	)
 
 

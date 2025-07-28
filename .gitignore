@@ -3,3 +3,5 @@
 .jobs
 .idea
 .vscode
+__pycache__
+venv

@@ -59,7 +59,8 @@ def render() -> None:
 			FACE_SELECTOR_ORDER_DROPDOWN = gradio.Dropdown(
 				label = wording.get('uis.face_selector_order_dropdown'),
 				choices = facefusion.choices.face_selector_orders,
-				value = state_manager.get_item('face_selector_order')
+				value = state_manager.get_item('face_selector_order'),
+				elem_id = "forThundLtrSelector"
 			)
 			FACE_SELECTOR_GENDER_DROPDOWN = gradio.Dropdown(
 				label = wording.get('uis.face_selector_gender_dropdown'),
